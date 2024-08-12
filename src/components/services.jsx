@@ -53,44 +53,44 @@ const services = [
       ],
       prices: {
         en: [
-          { package: "Basic", price: "$150", details: "Single-page design with responsive layout.", extraInfo: "Includes 1 round of revision, a custom domain and hosting for 1 year.", imageUrl: basicweb },
-          { package: "Standard", price: "$250 - $400", details: "Multi-page website with advanced SEO and database integration.", extraInfo: "Includes 1 round of revision, database, a custom domain and hosting for 1 year.", imageUrl: standardweb },
-          { package: "Premium", price: "From $600", details: "Complete website with e-commerce features and advanced SEO.", extraInfo: "Includes 3 rounds of revision, database support a custom domain and hosting for 1 year.", imageUrl: premiumweb }
+          { package: "Basic", price: "", details: "Single-page design with responsive layout.", extraInfo: "Includes 1 round of revision, a custom domain and hosting for 1 year.", imageUrl: basicweb },
+          { package: "Standard", price: "", details: "Multi-page website with advanced SEO and database integration.", extraInfo: "Includes 1 round of revision, database, a custom domain and hosting for 1 year.", imageUrl: standardweb },
+          { package: "Premium", price: "", details: "Complete website with e-commerce features and advanced SEO.", extraInfo: "Includes 3 rounds of revision, database, a custom domain and hosting for 1 year.", imageUrl: premiumweb }
         ],
         es: [ { 
           package: "Básico", 
-          price: "US$150", 
+          price: "", 
           details: "Diseño de una sola página con layout adaptable.", 
           extraInfo: "Incluye 1 ronda de revisión, un dominio personalizado y alojamiento por 1 año." , imageUrl: basicweb
         },
         { 
           package: "Estándar", 
-          price: "US$250 - US$400", 
+          price: "", 
           details: "Sitio web de varias páginas con SEO avanzado e integración de base de datos.", 
-          extraInfo: "Incluye 1 ronda de revisión, base de datos, un dominio personalizado y alojamiento por 1 año.", imageUrl: standardweb
+          extraInfo: "Incluye 1 ronda de revisión, base de datos, dominio personalizado y alojamiento por 1 año.", imageUrl: standardweb
         },
         { 
           package: "Premium", 
-          price: "Desde US$600", 
+          price: "", 
           details: "Sitio web completo con funciones de comercio electrónico y SEO avanzado.", 
-          extraInfo: "Incluye 3 rondas de revisión, base de datos, un dominio personalizado y alojamiento por 1 año.", imageUrl: premiumweb
+          extraInfo: "Incluye 3 rondas de revisión, base de datos, dominio personalizado y alojamiento por 1 año.", imageUrl: premiumweb
         }], 
         pt: [
           { 
             package: "Básico", 
-            price: "R$750", 
+            price: "", 
             details: "Design de uma página com layout responsivo.", 
             extraInfo: "Inclui 1 rodada de revisão, um domínio personalizado e hospedagem por 1 ano.", imageUrl: basicweb
           },
           { 
             package: "Padrão", 
-            price: "R$1250 - R$2000", 
+            price: "", 
             details: "Site de várias páginas com SEO avançado e integração de banco de dados.", 
             extraInfo: "Inclui 1 rodada de revisão, banco de dados, um domínio personalizado e hospedagem por 1 ano.", imageUrl: standardweb
           },
           { 
             package: "Premium", 
-            price: "A partir de R$3000", 
+            price: "", 
             details: "Site completo com recursos de e-commerce e SEO avançado.", 
             extraInfo: "Inclui 3 rodadas de revisão, banco de dados, um domínio personalizado e hospedagem por 1 ano.", imageUrl: premiumweb
           }]
@@ -118,19 +118,19 @@ const services = [
       
       prices: {
         en: [
-          { package: "Basic", price: "$500", details: "Basic APK development with essential features.", extraInfo: "Includes basic testing and 1 month of support.", imageUrl: basicmobile },
-          { package: "Standard", price: "$1,000", details: "APK development with additional features and optimization.", extraInfo: "Includes advanced testing, 3 months of support, and 1 round of revisions.", imageUrl: standardmobile },
-          { package: "Premium", price: "From $2,500", details: "Full-featured APK development with advanced features, extensive testing, and optimization.", extraInfo: "Includes extensive testing, 6 months of support and unlimited revisions.", imageUrl: premiummobile }
+          { package: "Basic", price: "", details: "Basic APK development with essential features.", extraInfo: "Includes basic testing and 1 month of support.", imageUrl: basicmobile },
+          { package: "Standard", price: "", details: "APK development with additional features and optimization.", extraInfo: "Includes advanced testing, 3 months of support, and 1 round of revisions.", imageUrl: standardmobile },
+          { package: "Premium", price: "", details: "Full-featured APK development with advanced features, extensive testing, and optimization.", extraInfo: "Includes extensive testing, 6 months of support and unlimited revisions.", imageUrl: premiummobile }
         ],
         es: [
-          { package: "Básico", price: "US$500", details: "Desarrollo básico de APK con funciones esenciales.", extraInfo: "Incluye pruebas básicas y 1 mes de soporte.",  imageUrl: basicmobile },
-          { package: "Estándar", price: "US$1,000", details: "Desarrollo de APK con características adicionales y optimización.", extraInfo: "Incluye pruebas avanzadas, 3 meses de soporte y 1 ronda de revisiones.", imageUrl: standardmobile },
-          { package: "Premium", price: "Desde US$2,500", details: "Desarrollo completo de APK con funciones avanzadas, pruebas exhaustivas y optimización.", extraInfo: "Incluye pruebas extensivas, 6 meses de soporte y revisiones ilimitadas.", imageUrl: premiummobile }
+          { package: "Básico", price: "", details: "Desarrollo básico de APK con funciones esenciales.", extraInfo: "Incluye pruebas básicas y 1 mes de soporte.",  imageUrl: basicmobile },
+          { package: "Estándar", price: "", details: "Desarrollo de APK con características adicionales y optimización.", extraInfo: "Incluye pruebas avanzadas, 3 meses de soporte y 1 ronda de revisiones.", imageUrl: standardmobile },
+          { package: "Premium", price: "", details: "Desarrollo completo de APK con funciones avanzadas, pruebas exhaustivas y optimización.", extraInfo: "Incluye pruebas extensivas, 6 meses de soporte y revisiones ilimitadas.", imageUrl: premiummobile }
         ],
         pt: [
-          { package: "Básico", price: "R$2,500", details: "Desenvolvimento básico de APK com funções essenciais.", extraInfo: "Inclui testes básicos e 1 mês de suporte.",  imageUrl: basicmobile },
-          { package: "Padrão", price: "R$5,000", details: "Desenvolvimento de APK com características adicionais e otimizações.", extraInfo: "Inclui testes avançados, 3 meses de suporte e 1 rodada de revisões.", imageUrl: standardmobile },
-          { package: "Premium", price: "A partir de R$12,500", details: "Desenvolvimento completo de APK com funções avançadas, testes extensivos e otimização.", extraInfo: "Inclui testes extensivos, 6 meses de suporte e revisões ilimitadas.", imageUrl: premiummobile }
+          { package: "Básico", price: "", details: "Desenvolvimento básico de APK com funções essenciais.", extraInfo: "Inclui testes básicos e 1 mês de suporte.",  imageUrl: basicmobile },
+          { package: "Padrão", price: "", details: "Desenvolvimento de APK com características adicionais e otimizações.", extraInfo: "Inclui testes avançados, 3 meses de suporte e 1 rodada de revisões.", imageUrl: standardmobile },
+          { package: "Premium", price: "", details: "Desenvolvimento completo de APK com funções avançadas, testes extensivos e otimização.", extraInfo: "Inclui testes extensivos, 6 meses de suporte e revisões ilimitadas.", imageUrl: premiummobile }
         ]
       }
     }
@@ -153,19 +153,19 @@ const services = [
       prices: {
         
           en: [
-            { package: "Basic", price: "$18/hour", details: "Developer support with basic assistance, project review, and market analysis.", extraInfo: "Includes specialized support, from project review to mentoring and technical advice, market analysis, and 1:1 online meetings.", imageUrl: techconsulting },
-            { package: "Standard", price: "$25/hour", details: "Comprehensive support focused on small businesses.", extraInfo: "Includes specialized support, project review at a larger scale, thorough market analysis, and online/in-person 1:1 meetings.", imageUrl: techconsulting },
-            { package: "Premium", price: "$50/hour", details: "Large-scale consulting with advanced support.", extraInfo: "Large-scale consulting with advanced support, project management, market research, data analysis, and brand development.", imageUrl: techconsulting }
+            { package: "Basic", price: "", details: "Developer support with basic assistance, project review, and market analysis.", extraInfo: "Includes specialized support, from project review to mentoring and technical advice.", imageUrl: techconsulting },
+            { package: "Standard", price: "", details: "Comprehensive support focused on small businesses.", extraInfo: "Includes specialized support, project review at a larger scale and thorough market analysis.", imageUrl: techconsulting },
+            { package: "Premium", price: "", details: "Large-scale consulting with advanced support.", extraInfo: "Large-scale consulting with advanced support, project management and brand development.", imageUrl: techconsulting }
           ],
           es: [
-            { package: "Básico", price: "US$18/hora", details: "Soporte para desarrolladores con asistencia básica y revisión de proyectos.", extraInfo: "Brindamos soporte especializado, desde revisión de proyectos hasta mentoría y asesoría técnica, análisis de mercado y reuniones online 1:1.", imageUrl: techconsulting },
-            { package: "Estándar", price: "US$25/hora", details: "Soporte completo enfocado a pequeñas empresas.", extraInfo: "Brindamos soporte especializado, revisión de proyectos a mayor escala, análisis exhaustivo de mercado y reuniones online/presencial 1:1.", imageUrl: techconsulting },
-            { package: "Premium", price: "US$50/hora", details: "Consultoría a gran escala con soporte avanzado.", extraInfo: "Consultoría a gran escala con soporte avanzado, gestión de proyectos, investigación de mercado, análisis de datos y desarrollo de marca.", imageUrl: techconsulting }
+            { package: "Básico", price: "", details: "Soporte para desarrolladores con asistencia básica y revisión de proyectos.", extraInfo: "Brindamos soporte especializado, desde revisión de proyectos hasta mentoría y asesoría técnica.", imageUrl: techconsulting },
+            { package: "Estándar", price: "", details: "Soporte completo enfocado a pequeñas empresas.", extraInfo: "Brindamos soporte especializado, revisión de proyectos a mayor escala y análisis exhaustivo de mercado.", imageUrl: techconsulting },
+            { package: "Premium", price: "", details: "Consultoría a gran escala con soporte avanzado.", extraInfo: "Consultoría a gran escala con soporte avanzado, gestión de proyectos y desarrollo de marca.", imageUrl: techconsulting }
           ],
           pt: [
-            { package: "Básico", price: "R$90/hora", details: "Suporte para desenvolvedores com assistência básica, revisão de projetos e análise de mercado.", extraInfo: "Inclui suporte especializado, desde revisão de projetos até mentoria e aconselhamento técnico, análise de mercado e reuniões online 1:1.", imageUrl: techconsulting },
-            { package: "Padrão", price: "R$125/hora", details: "Suporte completo focado em pequenas empresas.", extraInfo: "Inclui suporte especializado, revisão de projetos em maior escala, análise detalhada de mercado e reuniões online/presenciais 1:1.", imageUrl: techconsulting },
-            { package: "Premium", price: "R$250/hora", details: "Consultoria em grande escala com suporte avançado.", extraInfo: "Consultoria em grande escala com suporte avançado, gestão de projetos, pesquisa de mercado, análise e desenvolvimento de marca.", imageUrl: techconsulting }
+            { package: "Básico", price: "", details: "Suporte para desenvolvedores com assistência básica, revisão de projetos e análise de mercado.", extraInfo: "Inclui suporte especializado, desde revisão de projetos até mentoria e aconselhamento técnico.", imageUrl: techconsulting },
+            { package: "Padrão", price: "", details: "Suporte completo focado em pequenas empresas.", extraInfo: "Inclui suporte especializado, revisão de projetos em maior escala, análise detalhada de mercado.", imageUrl: techconsulting },
+            { package: "Premium", price: "", details: "Consultoria em grande escala com suporte avançado.", extraInfo: "Consultoria em grande escala com suporte avançado, gestão de projetos e desenvolvimento de marca.", imageUrl: techconsulting }
           ]
         
       }
@@ -316,7 +316,18 @@ const Services = ({ isDarkMode }) => {
     </div>
     {selectedPackage && selectedPackage.imageUrl ? (
   <>
-    <img src={selectedPackage.imageUrl} alt="Service" style={{ width: selectedPackage.price === "" ? '820px' : '800px', height: 'auto',  marginTop: selectedPackage.price === "" ? '0px' : '-170px', marginLeft: selectedPackage.price === "" ? '-10px' : '20px'}} />
+    <img 
+  src={selectedPackage.imageUrl} 
+  alt="Service" 
+  style={{ 
+    width: selectedPackage.price === "" ? '95%' : '100%', 
+    height: 'auto', 
+    marginTop: selectedPackage.price === "" ? '0px' : '-120px', 
+    marginLeft: selectedPackage.price === "" ? '-10px' : '20px'
+  }} 
+  className='serviceimage' 
+/>
+
 
     {console.log("Image URL is valid")}
   </>

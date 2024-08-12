@@ -45,10 +45,6 @@ function App() {
             element={<Home isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}
           />
           <Route
-            path="/Onix/"
-            element={<Home isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}
-          />
-          <Route
             path="/services"
             element={
               <Services isDarkMode={isDarkMode} toggleTheme={toggleTheme} />

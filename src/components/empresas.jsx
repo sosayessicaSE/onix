@@ -13,11 +13,7 @@ const services = {
       es: 'Diseño Web',
       pt: 'Design de Sites'
     },
-    shortDescription: {
-      en: "Establish and enhance your online presence with custom, responsive websites tailored to your business needs.",
-      es: "Establece y mejora tu presencia en línea con sitios web personalizados y responsivos adaptados a las necesidades de tu negocio.",
-      pt: "Estabeleça e melhore sua presença online com sites personalizados e responsivos adaptados às necessidades do seu negócio."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -77,11 +73,7 @@ const services = {
       es: 'Gestión de Bases de Datos',
       pt: 'Gestão de Bancos de Dados'
     },
-    shortDescription: {
-      en: "Optimize and secure your business data with expert database management solutions tailored to your needs.",
-      es: "Optimiza y asegura los datos de tu negocio con soluciones expertas de gestión de bases de datos adaptadas a tus necesidades.",
-      pt: "Otimize e proteja os dados do seu negócio com soluções especializadas de gestão de bancos de dados personalizadas para suas necessidades."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -143,11 +135,7 @@ const services = {
       es: 'Diseño Gráfico',
       pt: 'Design Gráfico'
     },
-    shortDescription: {
-      en: "Elevate your brand with visually stunning graphics that communicate your message effectively.",
-      es: "Eleva tu marca con gráficos visualmente impactantes que comunican tu mensaje de manera efectiva.",
-      pt: "Eleve sua marca com gráficos visualmente impressionantes que comunicam sua mensagem de forma eficaz."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -205,11 +193,10 @@ const Service = ({ service }) => {
 
   return (
     <div className="services-details">
-        <div className="empresa-image" style={{ backgroundImage: `url(${service.Imageurl})`, backgroundSize: 'cover', backgroundPosition: 'center', height: 'auto', width: '100%' }}>
+        <div className="empresa-image" style={{ backgroundImage: `url(${service.Imageurl})`, backgroundSize: 'cover', backgroundPosition: 'center bottom', height: 'auto', width: '100%' }}>
 </div>
       <div className="services-info">
         <h1 className="services-title">{service.title[language]}</h1>
-        <p className="services-short-description">{service.shortDescription[language]}</p>
         <div className="services-key-features">
           <h2>{service.keyFeatures.title[language]}</h2>
           <ul>

@@ -90,19 +90,13 @@
 .calendly-container {
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  left: 3%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 1000;
-  background-color: #fff; /* Opcional: un fondo blanco para el contenedor */
+  bottom: 2.5%;
 }
 
-.calendly-container img {
-  display: block;
-  cursor: pointer;
-  width: 100px; /* Ajusta según sea necesario */
-  height: auto;
-}
 
 
   .toggle--label-background {

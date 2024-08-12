@@ -1,110 +1,203 @@
 @font-face {
-	font-family: 'Dream Avenue';
-	src: url('../fonts/fonnts.com-Dream_Avenue.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Dream Avenue';
+  src: url('../fonts/fonnts.com-Dream_Avenue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'TT Drugs';
-	src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'TT Drugs';
+  src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .services-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    gap: 40px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  gap: 40px;
+}
+
+.services-details {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'TT Drugs';
+}
+
+.empresa-image {
+  flex: 1;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center; 
+  height: 100%; 
+  width: 100%;
+  position: relative;
   
+}
+
+.empresa-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+
+
+.services-info {
+  flex: 2;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.services-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services-short-description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.services-key-features, .services-additional-benefits {
+  margin-top: 20px;
+}
+
+.services-key-features h2, .services-additional-benefits h2 {
+  font-size: 1.5em;
+  color: #363636;
+  margin-bottom: 10px;
+}
+
+.services-key-features ul, .services-additional-benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-key-features li, .services-additional-benefits li {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 8px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.services-key-features li::before, .services-additional-benefits li::before {
+  content: '•';
+  color: #797979;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dark-theme .services-info {
+  background-color: rgba(71, 71, 71, 0.1);
+  border: 1px solid #3b3b3b;
+}
+.dark-theme .services-title {
+  color: white;
+}
+.dark-theme .services-short-description {
+  color: rgb(233, 233, 233);
+}
+.dark-theme .services-key-features h2, .dark-theme .services-additional-benefits h2, .dark-theme .services-key-features ul, .dark-theme .services-additional-benefits ul {
+  color: rgb(233, 233, 233);
+}
+.dark-theme .services-key-features li, .dark-theme .services-additional-benefits li {
+  color: #aaaaaa;
+}
+.dark-theme .empresa-image {
+  filter: brightness(80%);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
   .services-details {
-    margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'TT Drugs';
+    text-align: center;
+    text-decoration: none;
   }
-  
-  .empresa-image {
-    flex: 1; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center; 
-    height: auto; 
-    width: 100%;
-  }
-  
-  .services-info {
-    flex: 2;
-    padding: 30px;
-    background-color: #ffffff;
-  }
-  
-  .services-title {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .services-short-description {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .services-key-features, .services-additional-benefits {
-    margin-top: 20px;
-  }
-  
-  .services-key-features h2, .services-additional-benefits h2 {
-    font-size: 1.5em;
-    color: #363636;
-    margin-bottom: 10px;
-  }
-  
-  .services-key-features ul, .services-additional-benefits ul {
-    list-style-type: none;
+
+  .services-key-features ul, 
+  .services-additional-benefits ul {
+    list-style-type: none; 
+    
     padding: 0;
   }
-  
-  .services-key-features li, .services-additional-benefits li {
-    font-size: 1.1em;
-    color: #444;
-    margin-bottom: 8px;
-    padding-left: 15px;
+
+  .services-key-features li, 
+  .services-additional-benefits li {
+    padding-left: 0; 
+    
     position: relative;
+    text-align: center; /* Center align list items */
   }
-  
-  .services-key-features li::before, .services-additional-benefits li::before {
-    content: '•';
-    color: #797979;
-    position: absolute;
-    left: 0;
-    top: 0;
+
+  .services-key-features li::before,
+  .services-additional-benefits li::before {
+    content: none; /* Remove custom bullets */
   }
-  .dark-theme .services-info {
-    background-color: rgba(71, 71, 71, 0.1);
-    border: 1px solid #3b3b3b;
+
+
+  .services-container {
+    padding: 10px;
+    gap: 20px;
   }
-  .dark-theme .services-title {
-    color: white;
+
+  .services-details {
+    flex-direction: column;
   }
-  .dark-theme .services-short-description {
-    color: rgb(233, 233, 233);
+
+  .services-info {
+    padding: 20px;
   }
-  .dark-theme .services-key-features h2, .dark-theme .services-additional-benefits h2, .dark-theme .services-key-features ul, .dark-theme .services-additional-benefits ul{
-    color: rgb(233, 233, 233);
+
+
+
+  .services-short-description {
+    font-size: 1em;
   }
-  .dark-theme .services-key-features li, .dark-theme .services-additional-benefits li{
-    color: #aaaaaa;
+
+}
+@media (max-width: 480px) {
+  .services-container {
+    padding: 5px;
+    gap: 10px;
   }
-  .dark-theme .service-image {
-    filter: brightness(80%);
+
+  .services-details {
+    margin-top: 5%;
   }
-  
+
+  .services-info {
+    padding: 15px;
+  }
+
+  .services-title {
+    font-size: 25px;
+  }
+
+  .services-short-description {
+    font-size: 0.9em;
+  }
+
+  .services-key-features h2, .services-additional-benefits h2 {
+    font-size: 1em;
+  }
+
+  .services-key-features li, .services-additional-benefits li {
+    font-size: 0.9em;
+  }
+}

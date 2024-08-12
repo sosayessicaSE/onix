@@ -14,11 +14,7 @@ const services = {
       es: 'Diseño Web',
       pt: 'Design de Sites'
     },
-    shortDescription: {
-      en: "Establish and enhance your online presence with custom, responsive websites tailored to your business needs.",
-      es: "Establece y mejora tu presencia en línea con sitios web personalizados y responsivos adaptados a las necesidades de tu negocio.",
-      pt: "Estabeleça e melhore sua presença online com sites personalizados e responsivos adaptados às necessidades do seu negócio."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -78,11 +74,7 @@ const services = {
       es: 'Branding',
       pt: 'Branding'
     },
-    shortDescription: {
-      en: "Create a strong brand identity with cohesive visuals and messaging that resonates with your target audience.",
-      es: "Crea una identidad de marca sólida con visuales coherentes y mensajes que resuenen con tu público objetivo.",
-      pt: "Crie uma identidade de marca forte com visuais coesos e mensagens que ressoem com seu público-alvo."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -139,11 +131,7 @@ const services = {
       es: 'Administración de Redes Sociales',
       pt: 'Gestão de Mídias Sociais'
     },
-    shortDescription: {
-      en: "Engage with your audience and grow your online presence through strategic social media management.",
-      es: "Involucra a tu audiencia y aumenta tu presencia en línea mediante la gestión estratégica de redes sociales.",
-      pt: "Engaje com seu público e cresça sua presença online através de gestão estratégica de redes sociais."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -200,11 +188,7 @@ const services = {
       es: 'Diseño Gráfico',
       pt: 'Design Gráfico'
     },
-    shortDescription: {
-      en: "Elevate your brand with visually stunning graphics that communicate your message effectively.",
-      es: "Eleva tu marca con gráficos visualmente impactantes que comunican tu mensaje de manera efectiva.",
-      pt: "Eleve sua marca com gráficos visualmente impressionantes que comunicam sua mensagem de forma eficaz."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -262,7 +246,7 @@ const Service = ({ service }) => {
 
   return (
     <div className="services-details">
-        <div className="empresa-image" style={{ backgroundImage: `url(${service.Imageurl})`, backgroundSize: 'cover', backgroundPosition: 'center', height: 'auto', width: '100%' }}>
+        <div className="empresa-image" style={{ backgroundImage: `url(${service.Imageurl})`, backgroundSize: 'cover', backgroundPosition: 'center bottom', height: 'auto', width: '100%' }}>
 </div>
 
 
@@ -270,7 +254,7 @@ const Service = ({ service }) => {
 
       <div className="services-info">
         <h1 className="services-title">{service.title[language]}</h1>
-        <p className="services-short-description">{service.shortDescription[language]}</p>
+      
         <div className="services-key-features">
           <h2>{service.keyFeatures.title[language]}</h2>
           <ul>

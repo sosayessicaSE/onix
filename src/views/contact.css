@@ -23,6 +23,11 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+  .dark-theme .contact-container {
+    background-color: #1b1b1b;
+    color: #fff;
+  }
+  
   
   .contact-container h2 {
     font-size: 24px;
@@ -36,6 +41,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .dark-theme .contact-container h2 {
+    color: #ffffff;
+  }
+  .dark-theme .contact-info {
+    color: #ffffff;
+  }
+  .dark-theme .contact-info a{
+    color: #ffffff;
   }
   
   .contact-image img {

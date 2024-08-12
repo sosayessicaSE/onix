@@ -14,11 +14,7 @@ const services = {
       es: 'Soporte para Desarrolladores',
       pt: 'Suporte para Desenvolvedores'
     },
-    shortDescription: {
-      en: "Get expert assistance to overcome technical challenges and streamline your development process.",
-      es: "Obtén asistencia experta para superar desafíos técnicos y optimizar tu proceso de desarrollo.",
-      pt: "Obtenha assistência especializada para superar desafios técnicos e agilizar seu processo de desenvolvimento."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -78,11 +74,7 @@ const services = {
       es: 'Soporte Individual',
       pt: 'Suporte Individual'
     },
-    shortDescription: {
-      en: "Personalized assistance to help you achieve your individual goals in tech, design, and more.",
-      es: "Asistencia personalizada para ayudarte a alcanzar tus objetivos individuales en tecnología, diseño y más.",
-      pt: "Assistência personalizada para ajudá-lo a alcançar seus objetivos individuais em tecnologia, design e mais."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -142,11 +134,7 @@ const services = {
       es: 'Clases de Programación',
       pt: 'Aulas de Programação'
     },
-    shortDescription: {
-      en: "Learn to code with hands-on classes designed for all skill levels, from beginner to advanced.",
-      es: "Aprende a programar con clases prácticas diseñadas para todos los niveles, desde principiantes hasta avanzados.",
-      pt: "Aprenda a programar com aulas práticas projetadas para todos os níveis de habilidade, do iniciante ao avançado."
-    },
+
     keyFeatures: {
       title: {
         en: 'Key Features',
@@ -208,11 +196,11 @@ const Service = ({ service }) => {
 
   return (
     <div className="services-details">
-      <div className="empresa-image" style={{ backgroundImage: `url(${service.Imageurl})`, backgroundSize: 'cover', backgroundPosition: 'center', height: 'auto', width: '100%' }}>
+      <div className="empresa-image" style={{ backgroundImage: `url(${service.Imageurl})`, backgroundSize: 'cover', backgroundPosition: 'center', height: 'auto', width: '100%', bottom: '0px' }}>
       </div>
       <div className="services-info">
         <h1 className="services-title">{service.title[language]}</h1>
-        <p className="services-short-description">{service.shortDescription[language]}</p>
+        
         <div className="services-key-features">
           <h2>{service.keyFeatures.title[language]}</h2>
           <ul>

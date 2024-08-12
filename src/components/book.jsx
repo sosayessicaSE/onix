@@ -7,7 +7,6 @@ const Book = () => {
   const { i18n } = useTranslation();
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
-  
   const loadCalendlyScript = () => {
     if (scriptLoaded) return; 
 
@@ -16,13 +15,11 @@ const Book = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    
     script.onload = () => {
       setScriptLoaded(true);
     };
   };
 
- 
   const openCalendlyPopup = () => {
     loadCalendlyScript(); 
     if (window.Calendly) {
@@ -34,7 +31,6 @@ const Book = () => {
         branding: undefined
       });
     } else {
-      
       console.error("Calendly script not loaded");
     }
   };
@@ -48,15 +44,15 @@ const Book = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          width: '100px',
-          height: '100px',
+          width: '70px',
+          height: '70px',
           border: 'none',
           cursor: 'pointer',
-          display: 'block'
+          display: 'block',
+          backgroundColor: 'transparent' 
         }}
         aria-label="Open Calendly"
       >
-      
       </button>
     </div>
   );

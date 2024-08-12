@@ -12,6 +12,7 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover; /* Ensures the image covers the entire header */
 }
 
 .gallery-section {
@@ -74,7 +75,8 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .home-header {
-    padding: 200px 0;
+    padding: 200px 0; /* Adjust padding for smaller screens */
+    background-position: center; /* Keep the background image centered */
   }
 
   .gallery-section {
@@ -82,32 +84,31 @@
     padding: 30px 10px;
     gap: 30px;
   }
+  
 
   .gallery-item {
-    flex: 0 0 100%;
+    flex: 0 0 80%;
   }
-  
 }
 
 @media (max-width: 480px) {
   .home-header {
-    padding: 100px 0px;
-    background-position: 100% 85%; 
+    padding: 100px 0; /* Adjust padding for very small screens */
+    background-position: center top; /* Ensure the background image is positioned well */
   }
 
   .gallery-section {
-    padding: 60px;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
     margin-top: 5%;
-    gap: 80px;
+    gap: 30px; 
+   
   }
 
   .gallery-item img {
-    max-width: 100%;
-
+    max-width: 100%; /* Ensure images are responsive */
   }
   
-  
   .gallery-item h2 {
-    font-size: 16px;
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
 }
