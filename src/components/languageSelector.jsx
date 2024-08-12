@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaGlobe } from 'react-icons/fa';
 import '../views/LanguageSelector.css';
@@ -6,6 +6,13 @@ import '../views/LanguageSelector.css';
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    // Establece inglés como idioma predeterminado al cargar el componente
+    if (!i18n.language) {
+      i18n.changeLanguage('en');
+    }
+  }, [i18n]);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
