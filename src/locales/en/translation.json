@@ -1,0 +1,20 @@
+{
+    "companies": "Companies",
+    "entrepreneurship": "Entrepreneurship",
+    "individuals": "Individuals",
+    "home": "HOME",
+    "services": "SERVICES",
+    "about": "ABOUT US",
+    "contact": "CONTACT",
+    "webDevelopment": "Web Development",
+    "mobileApp": "Mobile Applications",
+    "technicalConsulting": "Technical Consulting",
+    "digitalMarketing": "Digital Marketing",
+    "webDevelopmentDescription": "We create customized websites optimized for all platforms.",
+    "mobileAppDescription": "We develop native and cross-platform mobile applications.",
+    "technicalConsultingDescription": "We offer technical consulting to help take your project to the next level.",
+    "digitalMarketingDescription": "Digital marketing strategies to increase your brand's visibility.",
+    "contactUs": "Contact us!",
+    "calendly.buttonText": "Book a meeting with us!"
+  }
+  

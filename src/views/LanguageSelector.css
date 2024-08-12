@@ -1,0 +1,59 @@
+.language-selector {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px;  
+    z-index: 1000;
+  }
+  
+  .globe-btn {
+    background-color: #ff990083; 
+    color: #fff; /* Icono en color blanco */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-right: 22px;
+  }
+  
+  .globe-btn:hover {
+    transform: scale(1.1); /* Escala al pasar el mouse */
+  }
+  
+  .language-menu {
+    position: absolute;
+    bottom: 90px; 
+    right: 0;
+    background-color: #ffffff96;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  
+  }
+  
+  .lang-option {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lang-option:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .lang-option:focus {
+    outline: none;
+  }
+  

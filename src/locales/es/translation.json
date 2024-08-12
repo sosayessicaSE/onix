@@ -1,0 +1,21 @@
+{
+    "companies": "Empresas",
+    "entrepreneurship": "Emprendimientos",
+    "individuals": "Individuos",
+    "home": "INICIO",
+  "services": "SERVICIOS",
+  "about": "SOBRE NOSOTROS",
+  "contact": "CONTACTO",
+  "webDevelopment": "Desarrollo Web",
+  "mobileApp": "Aplicaciones Móviles",
+  "technicalConsulting": "Consultoría Técnica",
+  "digitalMarketing": "Marketing Digital",
+  "webDevelopmentDescription": "Creamos sitios web personalizados y optimizados para todas las plataformas.",
+  "mobileAppDescription": "Desarrollamos aplicaciones móviles nativas y multiplataforma.",
+  "technicalConsultingDescription": "Ofrecemos consultoría técnica para ayudarte a llevar tu proyecto al siguiente nivel.",
+  "digitalMarketingDescription": "Estrategias de marketing digital para aumentar la visibilidad de tu marca.",
+  "contactUs": "¡Contáctanos!",
+  "calendly.buttonText": "¡Reserva una reunión con nosotros!"
+
+  }
+  

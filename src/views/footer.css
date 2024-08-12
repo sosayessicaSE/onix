@@ -1,0 +1,12 @@
+.foot {
+    color: #999999;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 900px) {
+     .foot {
+        display: none;
+    }
+  }
+  

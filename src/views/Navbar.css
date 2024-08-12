@@ -1,0 +1,88 @@
+nav {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; 
+  color: #a8a8a8;
+  height: 50px;
+  margin-left: -2%;
+}
+
+.navbar.dark-theme {
+  background-color: #1d1d1d34; 
+  box-shadow: inset;
+  color: #c9c6c6; 
+}
+
+.navbar a {
+  margin: 0 20px;
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.navbar a:hover {
+  color: #555;
+}
+
+.menuList {
+  display: flex; 
+  align-items: center; 
+  list-style-type: none;
+  margin: 0; 
+  white-space: nowrap; 
+}
+
+.homelink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  font-weight: lighter;
+  position: relative;
+}
+
+
+#language{
+  margin-left: 75%;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar a {
+    margin: 0 10px; /* Reduce margin between links */
+  }
+
+  .homelink {
+    margin-left: 10%; /* Adjust margin for the homelink */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px; 
+  }
+
+  .navbar a {
+    font-size: 13px;
+    margin: 0px 0; 
+    padding: 1px 8px;
+  }
+
+  .homelink {
+    margin-left: 7%; 
+  }
+
+  .homelink::after {
+    bottom: 0px;  
+    border-bottom: 1px solid rgb(177, 177, 177); 
+  }
+}

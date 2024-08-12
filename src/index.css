@@ -1,0 +1,136 @@
+
+:root {
+    --background-color-light: #f4f4f4;
+    --background-color-dark: #070707;
+    --property-background-color-light: #f4f4f4;
+    --property-background-color-dark: #070707;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  * {
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+  }
+  
+  .property.light-theme {
+    background-color: var(--property-background-color-light);
+  }
+  
+  .property.dark-theme {
+    background-color: var(--property-background-color-dark);
+  }
+  
+  
+  .property-container.light-theme{
+    background-color: var(--property-background-color-light);
+  }
+  .property-container.dark-theme {
+    background-color: var(--property-background-color-dark);
+  }
+  
+  .App.light-theme{
+    background-color: var(--background-color-light);
+  }
+  .App.dark-theme{
+    background-color: var(--background-color-dark);
+  }
+  
+  .header {
+  
+    background-color: var(--background-color-light);
+  }
+  
+  .header.dark-theme {
+    background-color: var(--background-color-dark);
+  }
+  
+  
+  .container--toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+  }
+  
+  .toggle--checkbox {
+    display: none;
+  }
+  
+  .toggle--label {
+    cursor: pointer;
+    display: block;
+    width: 60px;  
+    height: 30px;  
+    background-color: #ccc;
+    border-radius: 30px; 
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle--label-background {
+    display: block;
+    width: 26px;  
+    height: 26px;  
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label {
+    background-color: #333;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    transform: translateX(30px); 
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;  
+    transition: opacity 0.3s;
+  }
+  
+  .light-icon {
+    left: 4px;
+    opacity: 1;
+  }
+  
+  .dark-icon {
+    right: 4px;
+    opacity: 0;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label .light-icon {
+    opacity: 0;
+  }
+  
+  .toggle--checkbox:checked + .toggle--label .dark-icon {
+    opacity: 1;
+  }
+  .App{
+    overflow-x: hidden;
+  }
+  
