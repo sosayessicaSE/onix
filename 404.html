@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redireccionando...</title>
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+
+    (function() {
+      var currentLocation = window.location.pathname + window.location.search + window.location.hash;
+      var newUrl = window.location.origin + '/#' + currentLocation;
+      window.location.replace(newUrl);
+    })();
+  </script>
+</head>
+<body>
+
+  <p>Redireccionando a la página principal...</p>
+</body>
+</html>
