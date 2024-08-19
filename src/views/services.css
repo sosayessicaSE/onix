@@ -75,7 +75,7 @@
 
 /* Estilos para el tema oscuro */
 .dark-theme .service-card {
-  background-color: rgba(71, 71, 71, 0.1);
+  background-color: rgba(36, 36, 36, 0.486);
   border: 1px solid #3b3b3b;
 }
 
@@ -101,6 +101,23 @@
 .service-card a:hover {
   text-decoration: underline;
 }
+.close-button {
+  position: absolute;
+  top: 20px; /* Ajusta la distancia desde el borde superior */
+  right: 20px; /* Ajusta la distancia desde el borde izquierdo */
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px; /* Tamaño del botón */
+  height: 40px; /* Tamaño del botón */
+  font-size: 20px; /* Tamaño del texto dentro del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 
 /* Detalles del servicio */
 .service-details {
@@ -166,7 +183,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividad */
 
 
 /* Estilos generales del modal */
@@ -181,17 +197,21 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-align: center;
-  height:55%;
   top: 15%;
 }
-@media (max-width: 768px) {
+
+#DescModaldark-theme {
+  color: white;
+}
+
+@media (max-width: 800px) {
   .service-card {
     width: 60%;
     padding: 20px;
   }
   .service-modal{
     margin-top:150px;
-    height: 30%;
+   
   }
   
 }
@@ -203,10 +223,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.24); /* Semi-transparente */
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.514); 
+ 
   justify-content: center;
   align-items: center;
+  
 }
 
 /* Contenido del modal */
@@ -221,23 +242,20 @@
   overflow: hidden;
 }
 
-/* Botón de cerrar */
-.service-modal button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #333;
-}
+
 #TitleModal{
   margin-top: 80px;
   font-size: 30px;
   font-family: 'Dream Avenue';
 }
-#DescModal{
+#DescModallight-theme{
+  margin-left: 5%;
+  margin-top: 10%;
+  font-size: 22px;
+  font-family: 'TT Drugs';
+  
+}
+#DescModaldark-theme{
   margin-left: 5%;
   margin-top: 10%;
   font-size: 22px;
@@ -274,7 +292,7 @@
   color: #525252;
 }
 
-/* Contenedor de la cuadrícula */
+
 .package-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático para la cuadrícula */
@@ -287,6 +305,12 @@
   text-align: center;
   justify-content: center;
 }
+@media (min-width: 1900px) {
+  .package-grid{
+    margin-left: 9.5%;
+  }
+}
+
 
 /* Estilo para las tarjetas de paquete */
 .package-card {
@@ -337,9 +361,16 @@
   .package-card {
     padding: 15px;
   }
-  #DescModal{
+  #DescModaldark-theme{
     margin-left: 0%;
     font-size: 18px;
+    margin-top: 10%;
+
+  }
+  #DescModallight-theme{
+    margin-left: 0%;
+    font-size: 18px;
+    margin-top: 10%;
 
   }
   #Desprice{
@@ -350,9 +381,46 @@
 
 }
 
+/* Estilo para pantallas pequeñas */
 @media (max-width: 768px) {
-  .service-modal {
+  /* Estilo para el botón en el modal */
+  .service-modalMobile {
     width: 90%;
-    padding: 10px;
+    height: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
+.close-button {
+  position: absolute;
+  top: 20px; /* Ajusta la distancia desde el borde superior */
+  right: 20px; /* Ajusta la distancia desde el borde izquierdo */
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px; /* Tamaño del botón */
+  height: 40px; /* Tamaño del botón */
+  font-size: 20px; /* Tamaño del texto dentro del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
 }

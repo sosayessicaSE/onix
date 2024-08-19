@@ -2,6 +2,7 @@
     color: #999999;
     text-align: center;
     font-size: 12px;
+    height: 1px;
   }
   
   @media (max-width: 900px) {

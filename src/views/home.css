@@ -12,7 +12,8 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /* Ensures the image covers the entire header */
+  background-size: cover; 
+ 
 }
 
 .gallery-section {
@@ -77,6 +78,7 @@
   .home-header {
     padding: 200px 0; /* Adjust padding for smaller screens */
     background-position: center; /* Keep the background image centered */
+    
   }
 
   .gallery-section {

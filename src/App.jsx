@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./views/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
-import Footer from "./components/footer";
+
 import { keepTheme, setTheme } from "./components/mode";
 import Toggle from "./components/toggle";
 import Home from "./components/Home";
@@ -12,6 +12,7 @@ import Individuos from "./components/individuos";
 import Navbar from "./components/Navbar";
 import Services from "./components/services";
 import Contact from "./components/contact";
+import OnixAcademy from "./components/academy";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -57,6 +58,12 @@ function App() {
             }
           />
           <Route
+            path="/academy"
+            element={
+              <OnixAcademy isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+            }
+          />
+          <Route
             path="/empresas"
             element={
               <Empresas isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
@@ -75,7 +82,7 @@ function App() {
             }
           />
         </Routes>
-        <Footer />
+  
       </div>
     </Router>
   );

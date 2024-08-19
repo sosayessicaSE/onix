@@ -20,6 +20,9 @@ const Navbar = ({ themeClass }) => {
             <Link to="/services">{t('services')}</Link>
           </li>
           <li>
+            <Link to="/academy">{t('academy')}</Link>
+          </li> 
+          <li>
             <Link to="/contact">{t('contact')}</Link>
           </li> 
         </ul>

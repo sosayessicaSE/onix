@@ -15,7 +15,29 @@
   "technicalConsultingDescription": "Ofrecemos consultoría técnica para ayudarte a llevar tu proyecto al siguiente nivel.",
   "digitalMarketingDescription": "Estrategias de marketing digital para aumentar la visibilidad de tu marca.",
   "contactUs": "¡Contáctanos!",
-  "calendly.buttonText": "¡Reserva una reunión con nosotros!"
+  "calendly.buttonText": "¡Reserva una reunión con nosotros!",
+  "academy": "ACADEMIA ONIX",
+  "onixAcademyTitle": "Academia Onix",
+  "onixAcademyDescription": "Explora nuestra amplia gama de clases de programación diseñadas para ayudarte a mejorar tus habilidades.",
+  "duration": "Duración",
+  "format": "Formato",
+  "fundamentalsWebDevelopmentDescription": "Aprende los conceptos básicos de HTML, CSS y JavaScript. Este curso proporcionará una base sólida para construir aplicaciones web modernas.",
+  "advancedWebDevelopmentDescription": "Profundiza en temas avanzados como React, Node.js y la integración de API. Perfecto para quienes buscan mejorar sus habilidades en desarrollo web.",
+  "mobileAppDevelopmentDescription": "Explora el desarrollo de aplicaciones móviles usando React Native. Aprende a crear aplicaciones para las plataformas iOS y Android.",
+  "introductionToProgrammingDescription": "Comienza con la programación a través de Python. Este curso cubre los conceptos básicos de programación y resolución de problemas.",
+  "priceWeb": "US$550",
+  "priceInt": "US$500",
+  "priceAdvWeb": "US$800",
+  "priceMobile" : "US$950",
+  "price": "Precio",
+  "webweeks": "4 Semanas",
+  "begweeks": "5 Semanas",
+  "advweeks": "8 Semanas",
+  "mobweeks": "10 Semanas",
+  "fundamentalsWebDevelopmentTitle": "Fundamentos del Desarrollo Web",
+  "introductionToProgrammingTitle": "Introducción a la Programación",
+  "advancedWebDevelopmentTitle": "Desarrollo Web Avanzado",
+  "mobileAppDevelopmentTitle": "Desarrollo de Aplicaciones Móviles" 
 
   }
   

@@ -28,6 +28,9 @@
   * {
     scrollbar-width: thin; 
     scrollbar-color: #888 #f1f1f1; 
+    margin: 0;
+    padding: 0;
+    
   }
   
   .property.light-theme {
@@ -133,4 +136,3 @@
   .App{
     overflow-x: hidden;
   }
-  

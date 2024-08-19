@@ -9,7 +9,7 @@ nav {
   padding: 10px 20px; 
   color: #a8a8a8;
   height: 50px;
-  margin-left: -2%;
+  margin-left: 2%;
 }
 
 .navbar.dark-theme {
@@ -40,34 +40,47 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 25%;
   font-weight: lighter;
   position: relative;
+  flex: 1;
+  text-align: center;
 }
 
 
 #language{
   margin-left: 75%;
 }
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px; /* Adjust padding for smaller screens */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px; 
   }
 
   .navbar a {
-    margin: 0 10px; /* Reduce margin between links */
+    margin: 0 10px; 
   }
 
   .homelink {
-    margin-left: 10%; /* Adjust margin for the homelink */
+    margin-left: 0;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .menuList {
+    padding: 5px 0px 0px 0px; 
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 5px; 
   }
 
@@ -78,7 +91,9 @@ nav {
   }
 
   .homelink {
-    margin-left: 7%; 
+    margin-left: 0;
+    flex: 1;
+    text-align: center;
   }
 
   .homelink::after {

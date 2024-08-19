@@ -1,0 +1,100 @@
+/* classes.css */
+@font-face {
+	font-family: 'Dream Avenue';
+	src: url('../fonts/fonnts.com-Dream_Avenue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TT Drugs';
+	src: url('../fonts/TT_Drugs_Trial_Condensed_Thin.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+.classes {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .classes.dark-theme {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    font-family: 'Dream Avenue';
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    font-family: 'TT Drugs';
+    
+  }
+  
+  .classes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    
+    
+  }
+  
+  .class-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+  }
+  
+  .class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .class-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+  }
+  
+  .class-card h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+    font-family: 'TT Drugs';
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .class-card p {
+    margin: 0 10px 10px;
+  }
+  
+  .dark-theme .class-card {
+    background-color: #444;
+    color: #ddd;
+  }
+  
+  .dark-theme .class-image {
+    filter: brightness(0.8);
+  }
+  .infoClasses {
+    margin-top: auto; /* Empuja el elemento hacia abajo dentro del contenedor padre */
+    margin-bottom: 0px; /* Mantiene el margen inferior en 0px */
+}

@@ -27,10 +27,17 @@ import techconsulting from '../images/techconsulting.png';
 import disenoes from '../images/disenoses.png';
 import disenoen from '../images/disenosen.png';
 import disenopt from '../images/disenospt.png';
+import disenoesmobile from '../images/designesmobile.png';
+import disenoenmobile from '../images/designenmobile.png';
+import disenoptmobile from '../images/disenosptmobile.png';
+import logosMobile from '../images/logosMobile.png'
 import logos from '../images/logos.png'
 import redeses from '../images/sus-es.png'
 import redesen from '../images/sus-en.png'
 import redespt from '../images/sus-pt.png'
+import redesesmobile from '../images/redesesmobile.png'
+import redesenmobile from '../images/redesenmobile.png'
+import redesptmobile from '../images/redesptmobile.png'
 import "../views/services.css";
 
 const services = [
@@ -187,26 +194,34 @@ const services = [
         disenoes,
         disenoen,
         disenopt,
+        disenoesmobile,
+        disenoenmobile,
+        disenoptmobile,
         redesen,
         redeses,
         redespt,
+        redesenmobile,
+        redesesmobile,
+        redesptmobile,
         logos,
+        logosMobile
       ],
       prices: {
           en: [
-            { package: "Social Media Graphics", price: "", details: "Design of social media posts and images.", extraInfo: "", imageUrl:disenoen },
-            { package: "Social Media Management", price: "", details: "Management of social media accounts, including content scheduling and client management.", extraInfo: "" , imageUrl:redesen},
-            { package: "Brand Logo Design", price: "", details: "Custom logo design for your brand.", extraInfo: "Includes 3 logo concepts and unlimited revisions", imageUrl: logos }
+            { package: "Social Media Graphics", price: "", details: "Design of social media posts and images.", extraInfo: "", imageUrlDesktop: disenoen,
+              imageUrlMobile: disenoenmobile },
+            { package: "Social Media Management", price: "", details: "Management of social media accounts, including content scheduling and client management.", extraInfo: "" , imageUrlDesktop:redesen, imageUrlMobile: redesenmobile},
+            { package: "Brand Logo Design", price: "", details: "Custom logo design for your brand.", extraInfo: "", imageUrlDesktop: logos, imageUrlMobile: logosMobile }
           ],
           es: [
-            { package: "Diseño de Gráficos para Redes Sociales", price: "", details: "Diseño de publicaciones e imágenes para redes sociales.", extraInfo: "", imageUrl: disenoes },
-            { package: "Manejo de Redes Sociales", price: "", details: "Gestión de cuentas de redes sociales, con programación de contenido y administración de clientes.", extraInfo: "", imageUrl:redeses },
-            { package: "Diseño de Logotipo de Marca", price: "", details: "Diseño personalizado de logotipo para tu marca.", extraInfo: "Incluye 3 conceptos de logotipo y revisiones ilimitadas", imageUrl: logos }
+            { package: "Diseño de Gráficos para Redes Sociales", price: "", details: "Diseño de publicaciones e imágenes para redes sociales.", extraInfo: "", imageUrlDesktop: disenoes, imageUrlMobile: disenoesmobile },
+            { package: "Manejo de Redes Sociales", price: "", details: "Gestión de cuentas de redes sociales, con programación de contenido y administración de clientes.", extraInfo: "", imageUrlDesktop:redeses, imageUrlMobile: redesesmobile },
+            { package: "Diseño de Logotipo de Marca", price: "", details: "Diseño personalizado de logotipo para tu marca.", extraInfo: "", imageUrlDesktop:logos, imageUrlMobile: logosMobile }
           ],
           pt: [
-            { package: "Design de Gráficos para Redes Sociais", price: "", details: "Design de postagens e imagens para redes sociais.", extraInfo: "", imageUrl: disenopt },
-            { package: "Gerenciamento de Redes Sociais", price: "", details: "Gerenciamento de contas de redes sociais, com agendamento de conteúdo e administração de clientes.", extraInfo: "", imageUrl:redespt },
-            { package: "Design de Logotipo de Marca", price: "", details: "Design personalizado de logotipo para sua marca.", extraInfo: "Inclui 3 conceitos de logotipo e revisões ilimitadas", imageUrl: logos }
+            { package: "Design de Gráficos para Redes Sociais", price: "", details: "Design de postagens e imagens para redes sociais.", extraInfo: "", imageUrlDesktop: disenopt, imageUrlMobile: disenoptmobile },
+            { package: "Gerenciamento de Redes Sociais", price: "", details: "Gerenciamento de contas de redes sociais, com agendamento de conteúdo e administração de clientes.", extraInfo: "", imageUrlDesktop:redespt, imageUrlMobile: redesptmobile},
+            { package: "Design de Logotipo de Marca", price: "", details: "Design personalizado de logotipo para sua marca.", extraInfo: "", imageUrlDesktop:logos, imageUrlMobile: logosMobile }
           ]
         }
     }
@@ -220,7 +235,7 @@ const Services = ({ isDarkMode }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
   const detailsRefs = useRef({});
-  
+
   const toggleExpand = (id) => {
     setExpandedServiceId(expandedServiceId === id ? null : id);
     setTimeout(() => {
@@ -245,10 +260,10 @@ const Services = ({ isDarkMode }) => {
     setSelectedPackage(null);
   };
 
-
+  const isMobile = window.innerWidth <= 767;
 
   return (
-    <div className='services'>
+    <div className={`services ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
       <div className="services-list">
         {services.map(service => (
           <div
@@ -281,7 +296,7 @@ const Services = ({ isDarkMode }) => {
                 </video>
               </div>
             )}
-            
+
             <div className="package-grid">
               {service.details.prices[i18n.language].map((price, index) => (
                 <div
@@ -299,48 +314,55 @@ const Services = ({ isDarkMode }) => {
         )
       ))}
 
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="service-modal" contentLabel="Service Details">
-      
-      {selectedPackage && (
-  <div>
-    <div id='descriptionmodal'>
-    <div id='Desbox'>
-    <p id='DescModal'> {selectedPackage.extraInfo}</p>
-    </div>
-    {selectedPackage.price != "" && (
-    <div id='Desprice'>
-      <p>{selectedPackage.price}</p>
-    </div>
-    )
-}
-    </div>
-    {selectedPackage && selectedPackage.imageUrl ? (
-  <>
-    <img 
-  src={selectedPackage.imageUrl} 
-  alt="Service" 
-  style={{ 
-    width: selectedPackage.price === "" ? '95%' : '100%', 
-    height: 'auto', 
-    marginTop: selectedPackage.price === "" ? '0px' : '-120px', 
-    marginLeft: selectedPackage.price === "" ? '-10px' : '20px'
-  }} 
-  className='serviceimage' 
-/>
+<Modal
+  isOpen={modalIsOpen}
+  onRequestClose={closeModal}
+  className={`${selectedPackage && selectedPackage.imageUrlDesktop && isMobile ? 'service-modalMobile' : 'service-modal'} ${isDarkMode ? 'dark-theme' : 'light-theme'}`}
+  contentLabel="Service Details"
+  overlayClassName="Modal__Overlay"
+>
 
-
-    {console.log("Image URL is valid")}
-  </>
-) : (
-  <>
-    <p>Image not available</p>
-    {console.log("Image URL is not available")}
-  </>
-)}
-    <button onClick={closeModal}>x</button>
-  </div>
-)}
-      </Modal>
+  {selectedPackage ? (
+    <div>
+      <div id='descriptionmodal' >
+        <div id='Desbox'>
+          <p id={`DescModal${isDarkMode ? 'dark-theme' : 'light-theme'}`}>{selectedPackage.extraInfo}</p>
+        </div>
+        {selectedPackage.price && (
+          <div id='Desprice'>
+            <p>{selectedPackage.price}</p>
+          </div>
+        )}
+      </div>
+      {selectedPackage.imageUrlDesktop ? (
+        <img
+          src={isMobile ? selectedPackage.imageUrlMobile : selectedPackage.imageUrlDesktop}
+          alt="Service"
+          className={isMobile ? 'service-imageMobile' : 'serviceImageWeb'}
+          style={{
+            width: '95%',
+            height: 'auto',
+            marginTop: '20px'
+          }}
+        />
+      ) : (
+        <img
+          src={selectedPackage.imageUrl}
+          alt="Service"
+          className='serviceimage'
+          style={{
+            width: '95%',
+            height: 'auto',
+            marginTop: '20px'
+          }}
+        />
+      )}
+      <button className="close-button" onClick={closeModal}>x</button>
+    </div>
+  ) : (
+    <p>Loading...</p> 
+  )}
+</Modal>
     </div>
   );
 };
