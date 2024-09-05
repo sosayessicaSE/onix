@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import Services from "./components/services";
 import Contact from "./components/contact";
 import OnixAcademy from "./components/academy";
+import Whatsapp from './components/whatsapp'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -82,8 +83,9 @@ function App() {
             }
           />
         </Routes>
-  
+        <Whatsapp />
       </div>
+      
     </Router>
   );
 }

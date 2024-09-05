@@ -1,7 +1,7 @@
 .language-selector {
     position: fixed;
     bottom: 30px; 
-    right: 30px;  
+    left: 50px;  
     z-index: 1000;
   
   }
@@ -30,7 +30,7 @@
   .language-menu {
     position: absolute;
     bottom: 90px; 
-    right: 0;
+    right: -40%;
     background-color: #ffffff96;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,4 +59,12 @@
   .lang-option:focus {
     outline: none;
   }
+  @media (max-width: 768px) {
+    .language-selector {
+      left: 30px;  
   
+    }
+    .language-menu {
+      bottom: 70px; 
+    }
+  }

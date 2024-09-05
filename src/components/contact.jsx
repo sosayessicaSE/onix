@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
-import Modal from 'react-modal';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import officeImage from '../images/office.gif';
 import phoneIcon from '../images/phone.png';
 import emailIcon from '../images/email.png';
-import "../views/contact.css";
+import '../views/contact.css';
+import Book from './book';
 
 const contactDetails = {
   office: {
@@ -17,41 +17,37 @@ const contactDetails = {
       address: "techsolutionsonix@gmail.com",
       imageUrl: emailIcon
     },
+    hours: {
+      weekdays: "9:00 AM - 6:00 PM",
+      
+    },
+    
   }
 };
 
-const Contact = () => {
-  const { i18n } = useTranslation();
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const language = i18n.language || 'en';
-
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
+const Contact = ({ themeClass }) => {
+  const { t } = useTranslation();
 
   return (
-    <div className="contact-container">
-      <h2>{i18n.t('contactUs')}</h2>
-      <div className="contact-details">
+    <div className={`contact-container ${themeClass}`}>
+    
+      <div className={`contact-details ${themeClass}`}>
         <div className="contact-image">
-          <img src={contactDetails.office.imageUrl} alt="Office" />
+          <img src={contactDetails.office.imageUrl} alt={t('office')} />
         </div>
-        <div className="contact-info">
-          <p>
-            <img src={contactDetails.office.phone.imageUrl} alt="Phone" />
-            {contactDetails.office.phone.number}
-          </p>
-          <p>
-            <img src={contactDetails.office.email.imageUrl} alt="Email" />
-            <a href={`mailto:${contactDetails.office.email.address}`}>{contactDetails.office.email.address}</a>
-          </p>
+        <div className={`contact-info ${themeClass}`}>
+  <a href='https://wa.me/5554997040128' className="contact-item">
+    <img src={contactDetails.office.phone.imageUrl} alt={t('phone')} style={{ height: '100px', width: '200px' }}  />
+  </a>
+          <a href={`mailto:${contactDetails.office.email.address}`} className="contact-item">
+            <img src={contactDetails.office.email.imageUrl} alt={t('email')}  style={{ height: '100px', width: '200px' }}  />
+            </a>
+
+          {/* Pass themeClass to Book component */}
+          <Book themeClass={themeClass} />
+        
         </div>
       </div>
-      
     </div>
   );
 };

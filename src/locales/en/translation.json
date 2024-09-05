@@ -37,6 +37,15 @@
   "fundamentalsWebDevelopmentTitle": "Fundamentals of Web Development",
   "introductionToProgrammingTitle": "Introduction to Programming",
   "advancedWebDevelopmentTitle": "Advanced Web Development",
-  "mobileAppDevelopmentTitle": "Mobile App Development"
+  "mobileAppDevelopmentTitle": "Mobile App Development",
+
+  "office": "Office",
+  "phone": "Phone",
+  "email": "Email",
+  "location": "Location",
+  "hours": "Office Hours",
+  "weekdays": "Monday - Saturday",
+  "weekends": "Weekends",
+  "followUs": "Follow Us"
   }
   

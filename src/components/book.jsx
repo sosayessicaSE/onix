@@ -44,16 +44,18 @@ const Book = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          width: '70px',
-          height: '70px',
+          width: '35px',
+          height: '35px',
           border: 'none',
           cursor: 'pointer',
-          display: 'block',
+          padding:'50px',     
           backgroundColor: 'transparent' 
         }}
         aria-label="Open Calendly"
       >
+        
       </button>
+        
     </div>
   );
 };

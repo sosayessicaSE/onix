@@ -37,6 +37,14 @@
   "fundamentalsWebDevelopmentTitle": "Fundamentos do Desenvolvimento Web",
   "introductionToProgrammingTitle": "Introdução à Programação",
   "advancedWebDevelopmentTitle": "Desenvolvimento Web Avançado",
-  "mobileAppDevelopmentTitle": "Desenvolvimento de Aplicativos Móveis"
+  "mobileAppDevelopmentTitle": "Desenvolvimento de Aplicativos Móveis",
+  "office": "Escritório",
+  "phone": "Telefone",
+  "email": "Email",
+  "location": "Localização",
+  "hours": "Horário de funcionamento",
+  "weekdays": "Segunda - Sábado",
+  "weekends": "Fins de semana",
+  "followUs": "Siga-nos"
   }
   

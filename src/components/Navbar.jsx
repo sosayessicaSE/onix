@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Importa useTranslation
 import '../views/Navbar.css'; 
 import LanguageSelector from './languageSelector'; 
-import Book from './book';
+
 
 const Navbar = ({ themeClass }) => {
   const { t } = useTranslation(); // Inicializa useTranslation
@@ -29,9 +29,7 @@ const Navbar = ({ themeClass }) => {
         <div id='language'>
           <LanguageSelector /> 
         </div>
-        <div id='book'>
-          <Book/>
-        </div>
+       
       </nav>
     </div>
   );

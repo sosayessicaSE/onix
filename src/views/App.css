@@ -88,13 +88,8 @@
 
 /* App.css */
 .calendly-container {
-  position: fixed;
-  bottom: 10px;
-  left: 3%;
+  position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  z-index: 1000;
-  bottom: 2.5%;
 }
 
 
@@ -149,5 +144,62 @@
   }
   
 
+/* Default styles for larger screens */
+.whatsapp-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000; 
+}
 
-  
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent; 
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button img {
+  width: 60px; 
+  height: 60px; 
+}
+
+.whatsapp-button:hover {
+  background-color: #2dbb6663; 
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .whatsapp-container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-button {
+    padding: 8px;
+  }
+
+  .whatsapp-button img {
+    width: 50px; 
+    height: 50px; 
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 480px) {
+  .whatsapp-container {
+    bottom: 30px;
+    right: 15px;
+  }
+
+  .whatsapp-button {
+    padding: 6px;
+  }
+
+  .whatsapp-button img {
+    width: 40px; 
+    height: 40px; 
+  }
+}
